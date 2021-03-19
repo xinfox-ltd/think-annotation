@@ -1,0 +1,35 @@
+{
+  "name": "xinfox/think-annotation",
+  "description": "Annotation For ThinkPHP6",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "leige",
+      "email": "nicolaslei@163.com"
+    }
+  ],
+  "require": {
+    "topthink/framework": "^6.0",
+    "doctrine/annotations": "^1.6",
+    "php-di/phpdoc-reader": "^2.1",
+    "symfony/class-loader": "~3.2.0"
+  },
+  "require-dev": {
+    "topthink/think-ide-helper": "v1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "XinFox\\Annotation\\": "src"
+    }
+  },
+  "extra": {
+    "think": {
+      "services": [
+        "XinFox\\Annotation\\Service"
+      ],
+      "config": {
+        "annotation": "publish/annotation.php"
+      }
+    }
+  }
+}
